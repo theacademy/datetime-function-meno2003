@@ -33,7 +33,7 @@ public class DateTimeFunctions {
 	 */
 	public static LocalDate getLaterDatebyDays(LocalDate date, int x) {
 		//YOUR CODE STARTS HERE
-		LocalDate dateAfter = LocalDate.now().plusDays(x);
+		LocalDate dateAfter = date.plusDays(x);
 		return dateAfter;
 		//YOUR CODE ENDS HERE
 
@@ -45,7 +45,7 @@ public class DateTimeFunctions {
 	 */
 	public static LocalDate getPreviousDatebyWeeks(LocalDate date, int x) {
 		//YOUR CODE STARTS HERE
-		LocalDate dateBefore = LocalDate.now().minusWeeks(x);
+		LocalDate dateBefore = date.minusWeeks(x);
 		return dateBefore;
 		//YOUR CODE ENDS HERE
 
